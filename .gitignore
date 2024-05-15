@@ -1,6 +1,6 @@
-data/
+data/*
+!data/*/
 .DS_Store
 .idea/
 scripts/process/.ipynb_checkpoints/
 
-!**/.gitkeep
