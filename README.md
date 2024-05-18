@@ -1,7 +1,15 @@
-# Outil-traitement-corpus
+# Introduction
 
-- Tâche : Fill mask
-- Corpus : Le plus connu est peut-être wikipedia : https://huggingface.co/datasets/wikipedia .
-- À quel type de prédiction : classification
-- À quel modèle il a servi : google bert, distilbert, CasualLM
-- Observations sur ce corpus : Sur la page du corpus il y a une présentation sympa. Le corpus est constitué des dump-texts des pages de wikipédia dans toutes les langues imaginables. Il y a des milliers de modèles qui sont entraînés sur ce corpus. Il est écrit que ce dataset est souvent utilisé pour "Language modeling" même si je ne connais pas sa définition exacte. Mais c'est aussi écrit que c'est pour text generation et fill-mask.
+## General guide
+- Here's the general guide of the workflow:
+	- Use 
+	- Use get_urls.py to get urls of a certain subclass pages on Encyclopédie universalis. The script produces a txt file that contains one url per line. 
+		- How to run: python get_urls.py **target_url** **output_file.txt** **-l number_of_urls**
+		- Example: python get_urls.py 'https://www.universalis.fr/classification/economie-et-gestion/entreprise/' ../../data/raw/urls.txt -l 100
+		- This will give you a txt file of 100+ urls.
+	- Use create_dataset.py to produce a parquet file from the urls.txt generated.
+		- How to run: python create_dataset.py **url_file.txt** **output_file.parquet**
+		- Example: python create_dataset.py ../../data/raw/urls.txt ../../data/raw/dataset.parquet
+		
+## Detailed guide
+- 
