@@ -1,5 +1,4 @@
-data/*
-!data/*/
+data/raw/*.parquet
 .DS_Store
 .idea/
 scripts/process/.ipynb_checkpoints/
