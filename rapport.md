@@ -23,7 +23,7 @@ Observations sur ce corpus : Sur la page du corpus il y a une présentation symp
 
 ### Explanation
 - We choose Encyclopédie Universalis (EU from here) to create our dataset.
-- On EU, there is a 
+- On EU, there is a [classification page](https://www.universalis.fr/classification/).
 
 ## TP3
 
