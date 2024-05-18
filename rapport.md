@@ -10,6 +10,7 @@
 - The guide is organized by TP. Each section explains how to use the scripts to anwser the specific TP's demand.
 - Not every demand of every TP is systemacially satisfied as some of them get repeated in the following or previous TPs.
 - (Not every demand of every TP is systemacially satisfied as I failed to do some...)
+- I think all my code, at least those in the .py files, follow PEP8, as PyCharm validates my scripts.
 
 ## TP 1
 - We chosse to scrap on [Encyclopaedie Universalis](https://www.universalis.fr/) to create a datset similar to [wikipedia dataset](https://huggingface.co/datasets/wikipedia).
