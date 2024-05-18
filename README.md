@@ -16,5 +16,5 @@
 - Use stat_visualization.ipynb to visualize statistic data of the created dataset.
 		
 ## Detailed guide
-- A more detailed guide is in rapport.md in branch doc.
+- For a more detailed guide, and to understand how this repository answers the course's requirements, see [here](https://github.com/CourantenCourant/Outil-traitement-corpus/blob/doc/rapport.md).
   
