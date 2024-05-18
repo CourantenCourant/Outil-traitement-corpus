@@ -74,7 +74,7 @@ if __name__ == '__main__':
     parser.add_argument('url_file', help='Input txt file with one url per line.')
     parser.add_argument('output_file', help='Output file (without .parquet suffix).')
     parser.add_argument('-s', '--split', action='store_true', help='Split your dataset into train, dev and test.')
-    parser.add_argument('-p', '--percentage', type=float, help='Size of your each dev and test. Value between 0 and 0.5')
+    parser.add_argument('-p', '--percentage', type=float, help='Size of each dev and test. Value between 0 and 0.5')
     args = parser.parse_args()
 
     if args.split:
