@@ -35,7 +35,7 @@ Observations sur ce corpus : Sur la page du corpus il y a une présentation symp
   - On pages with articles: get all the articles' url.
   - On pages with classes and articles: get all the articles' url of the current page, and those of the subclasses.
 - Use 'python get_urls.py -h' to see how to launch the script.
-- Note that the '-l' option is not meant to be precise. Suppose that we have '-l 100' and the script already had 96 urls, if the next class to scrap have 20 urls, it will return 116 urls.
+- Note that the '-l', or the url's limit number, is not meant to be precise. Suppose that we have '-l 100' and the script already had 96 urls, if the next class to scrap have 20 urls, it will return 116 urls.
 - We then use create_dataset.py to visit these url and to get the introduction section of each article.
   - More explanation of create_dataset.py in the following sections.
 
