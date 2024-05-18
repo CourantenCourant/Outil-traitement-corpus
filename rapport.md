@@ -12,7 +12,7 @@ Observations sur ce corpus : Sur la page du corpus il y a une présentation symp
 - (Not every demand of every TP is systemacially satisfied as I failed to do some...)
 
 ## TP 1
-- We chosse to scrap on [Encyclopaedie Universalis](https://www.universalis.fr/) to create a datset similar to [wikipedia dataset](https://huggingface.co/datasets/wikipedia)
+- We chosse to scrap on [Encyclopaedie Universalis](https://www.universalis.fr/) to create a datset similar to [wikipedia dataset](https://huggingface.co/datasets/wikipedia).
 - All files in script/process/test/, or prefixed with "test_", are testing files, or building blocks to construct the official scripts.
 
 ## TP 2
