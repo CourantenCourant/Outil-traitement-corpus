@@ -12,7 +12,7 @@
 	- How to run: python create_dataset.py **url_file.txt** **output_file**
 	- Example: python create_dataset.py ../../data/raw/urls.txt ../../data/raw/dataset
 	- This will give you a .parquet file.
-   	- We didn't prepare any file for copyright reason.
+   	- We didn't prepare any parquet file for copyright reasons.
 - Use stat_visualization.ipynb to visualize statistic data of the created dataset.
 		
 ## Detailed guide
