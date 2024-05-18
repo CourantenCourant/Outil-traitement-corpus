@@ -86,6 +86,7 @@ Observations sur ce corpus : Sur la page du corpus il y a une présentation symp
 - Optionnel : si vous pensez que votre corpus est intéressant → Le publier sur huggingFace
 
 ### What we did
+- For splits, see TP5.
 - I'm still studying HuggingFace to see how to create dataset card and publish dataset...
 - But I will consider running my scripts on [all classes](https://www.universalis.fr/classification/) to obtain the complete dataset, and publish it on HuggingFace.
 - I have to work out a bunch of legal and licence issues which is really a pain in the ass...
