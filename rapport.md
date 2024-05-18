@@ -29,7 +29,7 @@ Observations sur ce corpus : Sur la page du corpus il y a une présentation symp
 ### Explanation
 - We choose Encyclopédie Universalis (EU from here) to create our dataset.
 - On EU, there is a [classification page](https://www.universalis.fr/classification/).
-- There are three type of pages of classification page: [pages with classes](https://www.universalis.fr/classification/arts/cinema/), , [pages with articles](https://www.universalis.fr/classification/arts/cinema/acteurs-et-actrices-cinema/acteurs-et-actrices-du-cinema-muet/), and [pages with classes and articles](https://www.universalis.fr/classification/arts/cinema/acteurs-et-actrices-cinema/).
+- There are three types classification page: [pages with classes](https://www.universalis.fr/classification/arts/cinema/), , [pages with articles](https://www.universalis.fr/classification/arts/cinema/acteurs-et-actrices-cinema/acteurs-et-actrices-du-cinema-muet/), and [pages with classes and articles](https://www.universalis.fr/classification/arts/cinema/acteurs-et-actrices-cinema/).
 - get_urls.py allows to do the following:
   - On pages with classes: get all the articles' url contained in the subclasses.
   - On pages with articles: get all the articles' url.
