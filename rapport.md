@@ -14,7 +14,7 @@
 
 ## TP 1
 - We chosse to scrap on [Encyclopaedie Universalis](https://www.universalis.fr/) to create a datset similar to [wikipedia dataset](https://huggingface.co/datasets/wikipedia).
-- All files in script/process/test/, or prefixed with "test_", are testing files, or building blocks to construct the official scripts.
+- All files in script/process/test/, or prefixed with "test_", are testing files, or building blocks to construct the official scripts. Most of them contain errors and are not maintained, except those mentioned in this rapport.
 
 ## TP 2
 ### Demands
