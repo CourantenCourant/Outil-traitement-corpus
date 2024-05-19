@@ -6,7 +6,7 @@
 - Use get_urls.py to get urls of a certain subclass page on Encyclopédie universalis. The script produces a txt file that contains one url per line. 
 	- How to run on terminal: ```bash
 cd my_folder
-ls -la
+ls -la```
  -
  - '''bash
 python get_urls.py target_url output_file.txt -l number_of_urls
