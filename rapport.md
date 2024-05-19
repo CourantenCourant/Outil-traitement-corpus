@@ -13,8 +13,8 @@
 - I think all my code, at least those in the .py files, follow PEP8, as PyCharm validates my scripts.
 
 ## TP 1
-- We chosse to scrap on [Encyclopaedie Universalis](https://www.universalis.fr/) to create a datset similar to [wikipedia dataset](https://huggingface.co/datasets/wikipedia).
-- All files in script/process/test/, or prefixed with "test_", are testing files, or building blocks to construct the official scripts. Most of them contain errors and are not maintained, except those mentioned in this rapport.
+- We choose to scrap on [Encyclopaedie Universalis](https://www.universalis.fr/) to create a datset similar to [wikipedia dataset](https://huggingface.co/datasets/wikipedia).
+- All files in script/process/test/, or prefixed with "test_", are testing files, i.e. building blocks of official scripts. Most of them contain errors and are not maintained, except those mentioned in this rapport.
 
 ## TP 2
 ### Demands
@@ -30,12 +30,12 @@
 ### Explanation
 - We choose Encyclopédie Universalis (EU from here) to create our dataset.
 - On EU, there is a [classification page](https://www.universalis.fr/classification/).
-- There are three types classification page: [pages with classes](https://www.universalis.fr/classification/arts/cinema/), , [pages with articles](https://www.universalis.fr/classification/arts/cinema/acteurs-et-actrices-cinema/acteurs-et-actrices-du-cinema-muet/), and [pages with classes and articles](https://www.universalis.fr/classification/arts/cinema/acteurs-et-actrices-cinema/).
+- Each classification page represents a class. There are three types classification page: [pages with subclasses](https://www.universalis.fr/classification/arts/cinema/), [pages with articles](https://www.universalis.fr/classification/arts/cinema/acteurs-et-actrices-cinema/acteurs-et-actrices-du-cinema-muet/), and [pages with subclasses and articles](https://www.universalis.fr/classification/arts/cinema/acteurs-et-actrices-cinema/).
 - get_urls.py allows to do the following:
-  - On pages with classes: get all the articles' url contained in the subclasses.
-  - On pages with articles: get all the articles' url.
-  - On pages with classes and articles: get all the articles' url of the current page, and those of the subclasses.
-- Use 'python get_urls.py -h' to see how to launch the script.
+  - On pages with subclasses: get all articles' url contained in the subclasses.
+  - On pages with articles: get all articles' url.
+  - On pages with subclasses and articles: get all the articles' url of the current page, and those of the subclasses.
+- Use `python get_urls.py -h` to see how to launch the script.
 - Note that the '-l', or the url's limit number, is not meant to be precise. Suppose that we have '-l 100' and the script already had 96 urls, if the next class to scrap have 20 urls, it will return 116 urls.
 - We then use create_dataset.py to visit these url and to get the introduction section of each article.
   - More explanation of create_dataset.py in the following sections.
