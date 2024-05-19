@@ -2,10 +2,10 @@
 
 ## General guide
 
-- Use ```conda env create -f requirements.yml``` to set up your conda environment. This will give you a conda environment called 'outil_corpus'.
+- Use `conda env create -f requirements.yml` to set up your conda environment. This will give you a conda environment called 'outil_corpus'.
 - All scripts are in `scripts/process/`.
 - Use `get_urls.py` to get urls of a certain class' pages on Encyclopédie universalis. The script produces a txt file that contains one url per line. 
-	- Run on terminal: ```python get_urls.py -h``` to see usage of the script.
+	- Run on terminal: `python get_urls.py -h` to see usage of the script.
    	- Example: ```python get_urls.py 'https://www.universalis.fr/classification/economie-et-gestion/entreprise/' ../../data/raw/urls.txt -l 100```
 	- This will give you a `urls.txt` of 100+ urls.
  	- We prepared a `urls.txt` in `data/raw/`.
