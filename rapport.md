@@ -14,7 +14,7 @@
 
 ## TP 1
 - We choose to scrap on [Encyclopaedie Universalis](https://www.universalis.fr/) to create a datset similar to [wikipedia dataset](https://huggingface.co/datasets/wikipedia).
-- All files in script/process/test/, or prefixed with "test_", are testing files, i.e. building blocks of official scripts. Most of them contain errors and are not maintained, except those mentioned in this rapport.
+- All files in `script/process/test/`, or prefixed with `test_`, are testing files, i.e. building blocks of official scripts. Most of them contain errors and are not maintained, except those mentioned in this rapport.
 
 ## TP 2
 ### Demands
@@ -24,21 +24,21 @@
 
 ### What we did
 - Initialize repository following MIT standard.
-- We use get_urls.py and create_dataset.py to web scrap.
-- See test_create_dataset.ipynb for the third point.
+- We use `get_urls.py` and `create_dataset.py` to web scrap.
+- See `test_create_dataset.ipynb` for the third point.
 
 ### Explanation
 - We choose Encyclopédie Universalis (EU from here) to create our dataset.
 - On EU, there is a [classification page](https://www.universalis.fr/classification/).
 - Each classification page represents a class. There are three types classification page: [pages with subclasses](https://www.universalis.fr/classification/arts/cinema/), [pages with articles](https://www.universalis.fr/classification/arts/cinema/acteurs-et-actrices-cinema/acteurs-et-actrices-du-cinema-muet/), and [pages with subclasses and articles](https://www.universalis.fr/classification/arts/cinema/acteurs-et-actrices-cinema/).
-- get_urls.py allows to do the following:
+- `get_urls.py` allows to do the following:
   - On pages with subclasses: get all articles' url contained in the subclasses.
   - On pages with articles: get all articles' url.
   - On pages with subclasses and articles: get all the articles' url of the current page, and those of the subclasses.
 - Use `python get_urls.py -h` on terminal to see how to launch the script.
-- Note that the '-l', or the url's limit number option, is not meant to be precise. Suppose that we have '-l 100' and the script already had 96 urls, if the next subclass to scrap have 20 urls, it will return 116 urls.
-- We then use create_dataset.py to visit these url and to get the introduction section of each article.
-  - More explanation of create_dataset.py in the following sections.
+- Note that the '-l' option, which represents how many url your want to scrap, is not meant to be precise. Suppose that we have '-l 100' and we have already collected 96 urls, if the next subclass to scrap contains 20 urls, the script will return 116 urls.
+- We then use `create_dataset.py` to visit these url and to get the introduction section of each article.
+  - More explanation of `create_dataset.py` in the following sections.
 
 ## TP3
 
@@ -47,12 +47,12 @@
 - Convertir son corpus au format Dataset
 
 ### What we did
-- We choose not to use pandas as our create_dataset.py generates .parquet file directly.
-- We use create_dataset.py to create datasets.
+- We choose not to use pandas as `create_dataset.py` generates .parquet file directly.
+- We use `create_dataset.py` to create datasets.
 
 ### Explanation
 - After scrapping from EU, create_dataset.py creates a Dataset object with the following structure:
-  - {'idx': int, 'url': str, 'title': str, 'intro': str}
+  - `{'idx': int, 'url': str, 'title': str, 'intro': str}`
 - It then stores it to a parquet file.
 
 ## TP4
@@ -62,10 +62,10 @@
 - Les implémenter et les calculer pour votre corpus
 
 ### What we did
-- We use stat_visualization.ipynb to calculate statictics and visualize data.
+- We use `stat_visualization.ipynb` to calculate statictics and visualize data.
 
 ### Explanation
-- stat_visualization.ipynb shows the length distribution of our corpus and compare it to the normal distribution.
+- `stat_visualization.ipynb` shows the length distribution of our corpus and compare it to the normal distribution.
 - It shows the 20 most frequent words (without punctuation) and compare it to the ziph's law.
 
 ## TP5
@@ -74,10 +74,10 @@
 - Splitter son corpus en test et train
 
 ### What we did
-- create_dataset.py has an option to split dataset into train, dev and test.
+- `create_dataset.py` has an option to split dataset into train, dev and test.
 
 ### Explanation
-- Use 'python create_dataset.py -h' to see how to split dataset.
+- Use `python create_dataset.py -h` to see how to split dataset.
 
 ## TP6
 
