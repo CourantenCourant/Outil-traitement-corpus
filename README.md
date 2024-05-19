@@ -7,7 +7,6 @@
 	- How to run on terminal: ```bash
 cd my_folder
 ls -la
-```
  -
  - '''bash
 python get_urls.py target_url output_file.txt -l number_of_urls
