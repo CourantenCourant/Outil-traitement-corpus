@@ -7,7 +7,7 @@ from datasets import Dataset
 
 
 def get_data(urls: List[str], wd) -> dict:
-    """"""
+    """Get data from Encyclopédie Universalis and create a dict"""
     id_list = []
     title_list = []
     intro_list = []
@@ -43,7 +43,7 @@ def split_dataset(ds: Dataset, percentage: float) -> dict:
 
 
 def main(url_file, output_file, split, percentage):
-    """"""
+    """Scrap data, create dataset, create parquet file"""
     with open(url_file, 'r') as file:
         urls = [url.strip() for url in file.readlines()]
 
