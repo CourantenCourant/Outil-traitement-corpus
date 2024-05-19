@@ -35,8 +35,8 @@
   - On pages with subclasses: get all articles' url contained in the subclasses.
   - On pages with articles: get all articles' url.
   - On pages with subclasses and articles: get all the articles' url of the current page, and those of the subclasses.
-- Use `python get_urls.py -h` to see how to launch the script.
-- Note that the '-l', or the url's limit number, is not meant to be precise. Suppose that we have '-l 100' and the script already had 96 urls, if the next class to scrap have 20 urls, it will return 116 urls.
+- Use `python get_urls.py -h` on terminal to see how to launch the script.
+- Note that the '-l', or the url's limit number option, is not meant to be precise. Suppose that we have '-l 100' and the script already had 96 urls, if the next subclass to scrap have 20 urls, it will return 116 urls.
 - We then use create_dataset.py to visit these url and to get the introduction section of each article.
   - More explanation of create_dataset.py in the following sections.
 
@@ -47,8 +47,8 @@
 - Convertir son corpus au format Dataset
 
 ### What we did
-- We choose not to use pandas as our dataset is already in .parquet format.
-- We use create_dataset.py to create a dataset.
+- We choose not to use pandas as our create_dataset.py generates .parquet file directly.
+- We use create_dataset.py to create datasets.
 
 ### Explanation
 - After scrapping from EU, create_dataset.py creates a Dataset object with the following structure:
@@ -74,7 +74,7 @@
 - Splitter son corpus en test et train
 
 ### What we did
-- create_dataset.py allows to split dataset into train, dev and test.
+- create_dataset.py has an option to split dataset into train, dev and test.
 
 ### Explanation
 - Use 'python create_dataset.py -h' to see how to split dataset.
@@ -91,7 +91,3 @@
 - I'm still studying HuggingFace to see how to create dataset card and publish dataset...
 - But I will consider running my scripts on [all classes](https://www.universalis.fr/classification/) to obtain the complete dataset, and publish it on HuggingFace.
 - I have to work out a bunch of legal and licence issues which is really a pain in the ass...
-
-
-
-
